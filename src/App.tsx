@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/buttons';
+import Formulario from './components/formulario';
+import Lista from './components/lista';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>JESUS CRISTO É O SENHOR !!</h1>
+      <Formulario />
+      <Lista />
     </div>
   );
 }
-
+//Colocando nosso class-componente, basta chamar como se fosse um elemento HTML
 export default App;
