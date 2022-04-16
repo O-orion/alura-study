@@ -42,6 +42,8 @@
   },
   "devDependencies": {
     "@types/video.js": "^7.3.33",
+    "sass": "^1.50.0",
+    "typescript-plugin-css-modules": "^3.4.0",
     "video.js": "^7.18.1"
   }
 }
