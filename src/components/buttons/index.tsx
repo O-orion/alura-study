@@ -1,12 +1,13 @@
 import React from 'react';
-import './style.scss'
-
-class Button extends React.Component{
+import style from './button.module.scss'
+//<{texto: string}> recebendo o texto, props por atributo
+class Button extends React.Component<{texto?: string}>{
     //extendo de um componente, ou seja será um class-components
+    //com this.props.children é acessando direto sem atributo busca pelo nó
 
     render(){ // classe principal render
         return (
-            <button className='botao'>Salvar</button>
+            <button className={style.botao}>{this.props.children}</button>
         );
     }
 }
